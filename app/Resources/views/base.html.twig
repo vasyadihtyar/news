@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title>News</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="wrapper">
+
+	<header class="header">
+		<h1><a href="{{ path('') }}">news</a></h1>
+	</header><!-- .header-->
+
+	<div class="middle">
+
+		<div class="container">
+			<main class="content">			
+				{% block body %} {% endblock %}
+			</main><!-- .content -->
+		</div><!-- .container-->
+
+		<aside class="right-sidebar">
+			<a href="{{ path('_new') }}"><button class="button">Добавить новость</button></a>
+		</aside><!-- .right-sidebar -->
+
+	</div><!-- .middle-->
+
+	<footer class="footer">
+		
+	</footer><!-- .footer -->
+
+</div><!-- .wrapper -->
+
+</body>
+</html>
